@@ -1,0 +1,12 @@
+.photos {
+  display: flex;
+  justify-content: center; /* Aligns items horizontally */
+  align-items: center; /* Aligns items vertically */
+  flex-wrap: wrap; /* Wraps the items if they exceed container width */
+  gap: 10px; /* Adds space between items */
+}
+
+.photo-item img {
+  max-width: 100px; /* Adjust the size of the images */
+  height: auto;
+}
