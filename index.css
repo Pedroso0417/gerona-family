@@ -1,19 +1,12 @@
 .photos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allows the photos to wrap onto the next line */
-  gap: 10px; /* Adds space between the items */
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-.photo-item {
-  width: calc(
-    33.33% - 20px
-  ); /* Each item takes up one-third of the container's width, minus the gap */
-  box-sizing: border-box; /* Ensures padding/border are included in the element's width */
-}
-
-.photo-item img {
-  display: block; /* Ensures images behave as block elements */
-  width: 100%; /* Ensures the images fill the parent element */
-  height: auto; /* Maintains the aspect ratio of the images */
-}
+    .photo-item img {
+      max-width: 100px;
+      height: auto;
+    }
