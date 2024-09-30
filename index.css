@@ -7,10 +7,10 @@
 
 .photo-item img {
   width: 100%; /* Makes the images responsive to the grid size */
-  border-radius: 50%;
+  
   height: auto;
 }
 /* Select the first three images */
-.photo-item:nth-child(n+4) {
-  display: none; /* Hide all photo items from the 4th onward */
-}
+/* .photo-item:nth-child(n+4) {
+  display: none; 
+} */
