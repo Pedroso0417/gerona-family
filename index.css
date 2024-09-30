@@ -1,12 +1,19 @@
 .photos {
   display: flex;
-  align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr); /* Ensures at least 3 columns */
-  gap: 10px; /* Adds space between the grid items */
+  flex-wrap: wrap; /* Allows the photos to wrap onto the next line */
+  gap: 10px; /* Adds space between the items */
+}
+
+.photo-item {
+  width: calc(
+    33.33% - 20px
+  ); /* Each item takes up one-third of the container's width, minus the gap */
+  box-sizing: border-box; /* Ensures padding/border are included in the element's width */
 }
 
 .photo-item img {
-  width: 100%; /* Makes the images responsive to the grid size */
-  height: auto;
+  display: block; /* Ensures images behave as block elements */
+  width: 100%; /* Ensures the images fill the parent element */
+  height: auto; /* Maintains the aspect ratio of the images */
 }
