@@ -5,7 +5,7 @@
   gap: 10px; /* Adds space between the grid items */
 }
 
-.photo-item img {
+.photo-item {
   width: 100%; /* Makes the images responsive to the grid size */
  height: auto;
 }
