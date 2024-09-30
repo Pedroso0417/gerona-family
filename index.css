@@ -7,10 +7,6 @@
 
 .photo-item img {
   width: 100%; /* Makes the images responsive to the grid size */
-  
+
   height: auto;
 }
-/* Select the first three images */
-/* .photo-item:nth-child(n+4) {
-  display: none; 
-} */
