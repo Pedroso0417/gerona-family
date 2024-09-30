@@ -1,12 +1,10 @@
 .photos {
-  display: flex;
-  justify-content: center; /* Aligns items horizontally */
-  align-items: center; /* Aligns items vertically */
-  flex-wrap: wrap; /* Wraps the items if they exceed container width */
-  gap: 10px; /* Adds space between items */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures at least 3 columns */
+  gap: 10px; /* Adds space between the grid items */
 }
 
 .photo-item img {
-  max-width: 100px; /* Adjust the size of the images */
+  width: 100%; /* Makes the images responsive to the grid size */
   height: auto;
 }
