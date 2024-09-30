@@ -1,11 +1,12 @@
 .photos {
-  display: block;
+  flex-wrap: wrap;
+  display: flex;
   align-items: center;
-  justify-content: center; /* Ensures at least 3 columns */
-  gap: 10px; /* Adds space between the grid items */
+  justify-content: center;
+  gap: 20px;
 }
 
 .photo-item {
   width: 100%; /* Makes the images responsive to the grid size */
- height: auto;
+  height: auto;
 }
