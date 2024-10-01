@@ -1,11 +1,13 @@
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: yellow;
+  color: yellow;
 }
 .photos {
-  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
