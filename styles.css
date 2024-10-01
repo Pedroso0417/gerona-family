@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -35,7 +35,9 @@ body {
 }
 
 .photo-item {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 264px;
 }
 
@@ -43,6 +45,7 @@ body {
 .photo-item img {
   width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
 /* Responsive behavior for smaller screens */
