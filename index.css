@@ -5,15 +5,15 @@
   color: blue;
 }
 
-.photo-section {
-  display: flex;
-}
 .photos {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px; /* Adds space between items */
   flex-wrap: wrap; /* Allows wrapping if the container is too small */
+}
+.photo-section {
+  display: flex;
 }
 
 .photo-item {
