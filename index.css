@@ -1,29 +1,37 @@
+/* Center the header */
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
   color: blue;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
+/* Photos container */
 .photos {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-wrap: wrap; /* Allow the photos to wrap to new lines if the container is small */
-  gap: 20px; /* Adds space between items */
+  gap: 20px;
 }
 
-.photo-section {
-  display: flex;
-  flex-direction: column; /* Align image and caption vertically */
-  align-items: center; /* Center image and caption horizontally */
-}
-
+/* Style each photo item */
 .photo-item {
-  max-width: 264px; /* Optional: limit the maximum size of each item */
+  text-align: center;
+  flex-basis: 30%; /* Ensures each item takes 30% of container width */
+  max-width: 264px;
 }
 
-.photo-item-img {
-  width: 100%; /* Ensure the image fills the container */
-  height: auto; /* Maintain the image aspect ratio */
+.photo-item img {
+  width: 100%; /* Ensures images fill the container */
+  height: auto; /* Maintains image aspect ratio */
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
 }
