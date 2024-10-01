@@ -11,22 +11,28 @@
 
 /* Photos container */
 .photos {
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  gap: 20px;
 }
 
 /* Style each photo item */
 .photo-item {
-  
+  text-align: center;
+  flex-basis: 30%; /* Ensures each item takes 30% of container width */
+  max-width: 264px;
 }
 
 .photo-item img {
   width: 100%; /* Ensures images fill the container */
-  
+  height: auto; /* Maintains image aspect ratio */
 }
 
 h3 {
-  /* font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #333;
-  margin-top: 10px; */
+  margin-top: 10px;
 }
