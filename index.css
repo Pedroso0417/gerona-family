@@ -5,6 +5,9 @@
   color: yellow;
 }
 
+.photo-section {
+  display: flex;
+}
 .photos {
   display: flex;
   align-items: center;
