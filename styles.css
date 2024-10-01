@@ -1,41 +1,56 @@
-/* Center the header */
-.header {
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  margin-bottom: 20px;
 }
 
-/* Photos container */
+.header {
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+}
+
+/* Container for the entire photo section */
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
+  width: 80%; /* Adjusts the container width */
 }
 
-/* Style each photo item */
-.header-section {
+/* Flexbox to group 3 items per row */
+.photo-row {
   display: flex;
-  text-align: center;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Wraps items if the screen is too small */
+}
+
+.photo-item {
+  text-align: center;
   max-width: 264px;
 }
 
-.item img {
+/* Adjustments for images */
+.photo-item img {
   width: 100%;
   height: auto;
 }
 
-.name {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  color: #333;
-  margin-top: 10px;
+/* Responsive behavior for smaller screens */
+@media screen and (max-width: 768px) {
+  .photo-row {
+    flex-direction: column;
+  }
+
+  .photo-item {
+    width: 100%;
+  }
 }
