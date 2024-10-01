@@ -1,5 +1,5 @@
 .header {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: blue;
@@ -9,20 +9,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Adds space between items */
-  /* Allows wrapping if the container is too small */
+  flex-wrap: wrap; /* Allow the photos to wrap to new lines if the container is small */
+  gap: 20px; /* Adds space between items */
 }
+
 .photo-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column; /* Align image and caption vertically */
+  align-items: center; /* Center image and caption horizontally */
 }
 
 .photo-item {
-  flex-basis: 30%; /* Each item will take up 30% of the container width */
-  max-width: 264px; /* Optional: limit the maximum size of each item */ /* Include padding/border in width calculation */
+  max-width: 264px; /* Optional: limit the maximum size of each item */
 }
 
 .photo-item img {
