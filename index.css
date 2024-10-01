@@ -1,8 +1,8 @@
 .header {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
-  color: yellow;
+  color: blue;
 }
 
 .photo-section {
@@ -18,8 +18,7 @@
 
 .photo-item {
   flex-basis: 30%; /* Each item will take up 30% of the container width */
-  max-width: 264px; /* Optional: limit the maximum size of each item */
-  box-sizing: border-box; /* Include padding/border in width calculation */
+  max-width: 264px; /* Optional: limit the maximum size of each item */ /* Include padding/border in width calculation */
 }
 
 .photo-item img {
